@@ -3,7 +3,7 @@ Repository created to keep all the content developed in the SAC-DM studies, usin
 
 # Instruções para uso
 1. Baixe o o código desse repositório acesse a pasta em que se encontra o Dockerfile
-2. Execute o Build da imagem com o comando "docker build . -t sacdm:1.0"
+2. Execute o Build da imagem com o comando `docker build . -t sacdm:1.0`
 Aguarde um momento enquanto o Docker realiza o Build, pode demorar alguns minutos.
 3. Após o build ser realizado com sucesso, escolha a pasta que será usada como destino para salvar os arquivos finais, ou que precisaram ser acessados durante a execução dos códigos.
 
