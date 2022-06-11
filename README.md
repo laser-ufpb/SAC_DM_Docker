@@ -29,3 +29,9 @@ Após o comando Start o container irá funcionar em modo desanexado, rodando com
 `docker stop sacdm`
 
 Todos os arquivos criados gerados são salvos automaticamente na pasta destino no momento do run do container, e caso o container seja apagado, os arquivos não serão apagados juntos e poderam ser acessados pelo gerenciador de arquivos da máquina Host normalmente.
+
+
+## ATENÇÃO!
+Para habilitar o tensorflow com GPU no docker é necessário primeiro configurar os drivers da NVIDIA para containers e atualizar o WSL no windows.
+E para a execução do container é necessário ativar a flag de GPUS
+ex: `docker run -d -p 8888:8888 --gpus all -v C:/Users/moises/Documents/Mestrado/Scripts:/tf/Notebook --name sacdm sacdm:1.0`
